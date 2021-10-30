@@ -1,0 +1,1428 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'EB Garamond', serif;
+}
+
+@-webkit-keyframes move {
+  30% {
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    opacity: 100%;
+  }
+}
+
+@keyframes move {
+  30% {
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    opacity: 100%;
+  }
+}
+
+/*  320px */
+/* Header - Nav */
+.HeaderInicio {
+  background: url(/assets/birmingham-museums-trust-hcXPIKsC2PM-unsplash-min.jpg);
+  background-size: contain;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vw;
+}
+
+h1 {
+  color: rgba(255, 255, 255, 0.753);
+  margin-top: 10px;
+  font-weight: 400;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-animation: move 1s 2s forwards;
+          animation: move 1s 2s forwards;
+}
+
+figure {
+  position: relative;
+  top: 80px;
+  margin-left: 120px;
+  -webkit-transform: translateY(-400%);
+          transform: translateY(-400%);
+  -webkit-animation: move 1s 3s ease-out forwards;
+          animation: move 1s 3s ease-out forwards;
+}
+
+figure figcaption {
+  color: rgba(255, 255, 255, 0.753);
+}
+
+figure .Auguste {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-right: 25px;
+  color: rgba(255, 255, 255, 0.753);
+  font-size: 16px;
+}
+
+.linkLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: 60px;
+}
+
+.linkLogo .Logo {
+  height: 70px;
+  width: 50px;
+}
+
+.icon {
+  color: white;
+  position: relative;
+  top: -40px;
+  font-size: 1.3em;
+  margin-left: 12px;
+}
+
+.ContainerWeb {
+  display: none;
+}
+
+.container {
+  height: 70px;
+}
+
+.NavList {
+  position: relative;
+  top: -30px;
+  margin-top: 10px;
+  padding-top: 10px;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.301);
+  width: 100vw;
+  height: 100vh;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: 2s all;
+  transition: 2s all;
+}
+
+.NavList li {
+  margin-top: 10px;
+  text-align: center;
+  list-style: none;
+  padding: 30px;
+}
+
+.NavList li a {
+  text-decoration: none;
+  color: white;
+}
+
+.NavList .NavImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.validar {
+  display: none;
+}
+
+#check:checked ~ .NavList {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.Galeria h2 {
+  text-align: center;
+  font-weight: 400;
+  font-style: italic;
+  padding: 10px;
+}
+
+.contentImg img {
+  padding-top: 20px;
+  width: 50%;
+  height: 200px;
+  border-radius: 0 40px 0 40px;
+}
+
+.contentImg2 {
+  text-align: right;
+}
+
+.contentImg2 img {
+  width: 50%;
+  height: 200px;
+  border-radius: 40px 0px 40px 0px;
+}
+
+.CentradoBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.BtnGaleria {
+  background-color: black;
+  padding: 0.7em;
+  font-size: 0.7em;
+  border-radius: 20px 0 20px 0;
+}
+
+.BtnGaleria a {
+  color: white;
+  text-decoration: none;
+}
+
+.Horarios h3 {
+  text-align: center;
+}
+
+.Horarios p {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.Horarios .ImgUno {
+  position: absolute;
+  left: -30px;
+  margin-top: -30px;
+  z-index: -1;
+  width: 50%;
+}
+
+.ContenedorHora {
+  border: 1px solid black;
+  width: 70%;
+  border-radius: 40px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.ContenedorHora h3 {
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.ContenedorHora p {
+  font-size: 20px;
+  padding: 2em;
+  text-align: center;
+}
+
+.ContenedorHora .BtnReservar {
+  background-color: black;
+  padding: 0.7em;
+  font-size: 0.7em;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.ContenedorHora .BtnReservar a {
+  color: white;
+  text-decoration: none;
+}
+
+.ContenedorHora .ImgDos {
+  position: absolute;
+  width: 60%;
+  margin-top: -20px;
+  right: 10px;
+  z-index: -1;
+}
+
+.ContenedorHora .ImgTres {
+  position: absolute;
+  left: -30px;
+  margin-top: 30px;
+  z-index: -1;
+  width: 50%;
+}
+
+.NewsLetter {
+  background: url(/assets/birmingham-museums-trust-hcXPIKsC2PM-unsplash-min.jpg);
+  background-size: contain;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 20vh;
+  margin-top: 6em;
+}
+
+.NewsLetter .ContenedorNews {
+  text-align: left;
+}
+
+.NewsLetter .ContenedorNews h4 {
+  position: relative;
+  color: rgba(255, 255, 255, 0.753);
+  top: 40px;
+}
+
+.NewsLetter .ContenedorNews .LabelEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 3em;
+  position: relative;
+  top: 20px;
+}
+
+.NewsLetter .ContenedorNews #email {
+  background-color: rgba(222, 184, 135, 0.726);
+  border: none;
+}
+
+.FooterMobile {
+  margin-top: 2em;
+}
+
+.FooterMobile .ContenedorUno {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  background-color: black;
+  padding: 20px;
+}
+
+.FooterMobile .ContenedorUno .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.FooterMobile .ContenedorUno .redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.FooterMobile .ContenedorUno .redes .RedesLogo {
+  width: 20px;
+  text-align: center;
+  height: 40px;
+}
+
+.FooterMobile .ContenedorUno .redes .IconRedes {
+  margin-left: -10px;
+}
+
+.FooterMobile .Creador {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.FooterMobile .Creador a {
+  color: tomato;
+  text-decoration: none;
+}
+
+.FooterWeb {
+  display: none;
+}
+
+.headerGaleria {
+  background: url(/assets/GALERIA.jpg);
+  background-size: contain;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vw;
+}
+
+.GaleriaTitle {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.HeaderCuenta {
+  background: url(/assets/CUENTA-min.jpg);
+  background-size: contain;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vw;
+}
+
+.HeaderCrearCuenta {
+  background: url(/assets/CrearCUENTA-min.jpg);
+  background-size: contain;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vw;
+}
+
+.TitleCuenta {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.ContenedorCuenta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid black;
+  padding: 2.5rem;
+  margin: 2rem;
+}
+
+.ContenedorCuenta .LabelGeneral .inputGeneral {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.ContenedorCuenta .LabelGeneral .inputPw {
+  width: 100%;
+  padding: 5px;
+}
+
+.ContenedorCuenta .Recuperar {
+  color: black;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+.ContenedorCuenta .Iniciar {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  margin-top: 30px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.ContenedorCuenta .Crear {
+  background-color: black;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.ContenedorCuenta .Crear a {
+  text-decoration: none;
+  color: white;
+  padding: 30px;
+}
+
+.ContenedorCuenta .Crear a:hover {
+  color: #868686;
+}
+
+.ContenedorCuenta .CentradoBtn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.ContenedorCuenta .CentradoBtn .CrearCuenta {
+  width: 100%;
+  background-color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.ContenedorCuenta .CentradoBtn .CrearCuenta .Arrow {
+  text-decoration: none;
+  color: white;
+  padding: 30px;
+}
+
+.ContenedorCuenta .CentradoBtn .CrearCuenta .Arrow:hover {
+  color: #868686;
+}
+
+.HeaderContacto {
+  background: url(/assets/CONTACTO-min.jpg);
+  background-size: contain;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vw;
+}
+
+.TitleContacto {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.TitleForm {
+  text-align: center;
+}
+
+.FormContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.FormContacto .EnviarBtn {
+  width: 100%;
+  background-color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.FormContacto .EnviarBtn a {
+  text-decoration: none;
+  color: white;
+  padding: 30px;
+}
+
+.FormContacto .EnviarBtn a:hover {
+  color: tomato;
+}
+
+.FormContacto .LabelContacto .inputContacto {
+  padding: 1px;
+  width: 100%;
+}
+
+.FormContacto .LabelContacto .text {
+  width: 100%;
+}
+
+.HeaderNosotros {
+  background: url(/assets/NOSOTROS-min.jpg);
+  background-size: contain;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vw;
+}
+
+.TituloMayorNosotros {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.TitleNosotros {
+  text-align: center;
+}
+
+.ContenedorNosotros {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ContenedorNosotros .NosotrosImg {
+  padding: 2rem;
+  width: 80%;
+}
+
+.ContenedorNosotros .textoNosotros {
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.ContentGaleriaWeb {
+  display: none;
+}
+
+.HeaderObra {
+  background-color: black;
+}
+
+.HeaderObra h1 {
+  display: none;
+}
+
+.ObraVolver {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.ObraVolver a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.ContenedorObra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+.ContenedorObra img {
+  width: 60%;
+  border-radius: 0 20px 0 20px;
+}
+
+.ContenedorObra .ContentObra h2 {
+  font-size: 1.3rem;
+  padding: 5px;
+}
+
+.ContenedorObra .ContentObra p {
+  padding: 10px;
+}
+
+@media (min-width: 360px) {
+  figure {
+    top: 120px;
+    -webkit-transform: translateY(-600%);
+            transform: translateY(-600%);
+  }
+  .ContenedorHora .ImgDos {
+    width: 40%;
+  }
+  .ContenedorHora .ImgTres {
+    margin-top: 10px;
+    width: 45%;
+  }
+  .NewsLetter {
+    margin-top: 7em;
+  }
+  .NewsLetter .ContenedorNews h4 {
+    font-size: 17px;
+  }
+  .NewsLetter .ContenedorNews h4 .LabelEmail {
+    margin-right: 6em;
+  }
+  .FormContacto {
+    padding: 3rem;
+    margin: 3rem;
+  }
+}
+
+@media (min-width: 375px) {
+  h1 {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  figure {
+    top: 120px;
+    -webkit-transform: translateY(-500%);
+            transform: translateY(-500%);
+  }
+  .GaleriaTitle {
+    margin-top: 100px;
+  }
+  .Horarios .ImgUno {
+    width: 40%;
+  }
+  .ContenedorHora .ImgDos {
+    right: 0;
+    width: 43%;
+    margin-top: -30px;
+  }
+  .ContenedorHora .ImgTres {
+    margin-top: 0px;
+    width: 45%;
+  }
+  .NewsLetter {
+    margin-top: 7em;
+  }
+  .NewsLetter .ContenedorNews h4 {
+    font-size: 17px;
+  }
+  .NewsLetter .ContenedorNews h4 .LabelEmail {
+    margin-right: 6em;
+  }
+  .FormContacto {
+    padding: 2rem;
+    margin: 4rem;
+  }
+}
+
+@media (min-width: 411px) {
+  figure {
+    -webkit-transform: translateY(-700%);
+            transform: translateY(-700%);
+    margin-top: 40px;
+  }
+  .ContenedorHora .ImgDos {
+    right: 0;
+    width: 40%;
+    margin-top: -40px;
+  }
+  .ContenedorHora .ImgTres {
+    width: 40%;
+  }
+  .NewsLetter .ContenedorNews h4 {
+    font-size: 20px;
+  }
+  .NewsLetter .ContenedorNews .LabelEmail {
+    margin-right: 6em;
+  }
+  .FormContacto {
+    padding: 3rem;
+  }
+}
+
+@media (min-width: 414px) {
+  h1 {
+    margin-top: 30px;
+  }
+  figure {
+    -webkit-transform: translateY(-700%);
+            transform: translateY(-700%);
+    margin-top: 80px;
+  }
+  .Horarios .ImgUno {
+    width: 35%;
+    margin-top: 10px;
+  }
+  .ContenedorHora .ImgDos {
+    right: 0;
+    width: 40%;
+    margin-top: -40px;
+  }
+  .ContenedorHora .ImgTres {
+    margin-top: -10px;
+    width: 40%;
+  }
+  .NewsLetter .ContenedorNews h4 {
+    font-size: 20px;
+  }
+  .NewsLetter .ContenedorNews .LabelEmail {
+    margin-right: 6em;
+  }
+  .GaleriaTitle {
+    margin-top: 120px;
+  }
+}
+
+@media (min-width: 425px) {
+  h1 {
+    margin-top: 20px;
+  }
+  figure {
+    -webkit-transform: translateY(-700%);
+            transform: translateY(-700%);
+    margin-top: 70px;
+  }
+  .Horarios .ImgUno {
+    width: 30%;
+    margin-top: 10px;
+  }
+  .ContenedorHora .ImgDos {
+    right: 0;
+    width: 40%;
+    margin-top: -40px;
+  }
+  .ContenedorHora .ImgTres {
+    margin-top: -10px;
+    width: 40%;
+  }
+  .NewsLetter {
+    margin-top: 8em;
+  }
+  .NewsLetter .ContenedorNews h4 {
+    font-size: 20px;
+  }
+  .NewsLetter .ContenedorNews .LabelEmail {
+    margin-right: 6em;
+  }
+  .GaleriaTitle {
+    margin-top: 120px;
+  }
+  .FormContacto {
+    padding: 4rem;
+    margin: 3rem;
+  }
+}
+
+@media (min-width: 476px) {
+  h1 {
+    margin-top: 20px;
+  }
+  figure {
+    -webkit-transform: translateY(-800%);
+            transform: translateY(-800%);
+    margin-top: 100px;
+  }
+  .ContenedorHora .ImgDos {
+    right: 0;
+    width: 40%;
+    margin-top: -40px;
+  }
+  .ContenedorHora .ImgTres {
+    margin-top: -30px;
+    width: 40%;
+  }
+  .NewsLetter {
+    margin-top: 9em;
+  }
+  .NewsLetter .ContenedorNews h4 {
+    font-size: 22px;
+  }
+  .NewsLetter .ContenedorNews #email {
+    margin-right: 2em;
+    padding: 4px;
+  }
+  .GaleriaTitle {
+    margin-top: 120px;
+  }
+}
+
+@media (min-width: 768px) {
+  .HeaderInicio,
+  .headerGaleria,
+  .HeaderNosotros,
+  .HeaderCrearCuenta,
+  .HeaderCuenta,
+  .HeaderContacto {
+    height: 75vw;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  figure {
+    margin-top: 100px;
+  }
+  figure figcaption {
+    font-size: 2rem;
+  }
+  figure .Auguste {
+    font-size: 1.5rem;
+  }
+  .contentImg img {
+    height: 250px;
+  }
+  .contentImg2 img {
+    height: 250px;
+  }
+  .BtnGaleria {
+    padding: 0.9em;
+    font-size: 0.9em;
+  }
+  .Horarios .ImgUno {
+    width: 25%;
+    margin-top: -50px;
+  }
+  .ContenedorHora .BtnReservar {
+    padding: 1em;
+    font-size: 0.9em;
+  }
+  .ContenedorHora .ImgDos {
+    width: 25%;
+  }
+  .ContenedorHora .ImgTres {
+    width: 29%;
+    margin-top: -131px;
+  }
+  .NewsLetter .ContenedorNews h4 {
+    font-size: 26px;
+    text-align: center;
+  }
+  .NewsLetter .ContenedorNews .LabelEmail {
+    margin-right: 0em;
+    top: 40px;
+  }
+  .GaleriaTitle,
+  .TitleContacto,
+  .TitleCuenta,
+  .TituloMayorNosotros {
+    margin-top: 180px;
+  }
+  .ContenedorCuenta {
+    padding: 1.5rem;
+    margin: 5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ContenedorCuenta .Recuperar {
+    font-size: 16px;
+    margin-top: 15px;
+    text-align: center;
+    position: relative;
+    right: 25px;
+  }
+  .ContenedorCuenta .Iniciar,
+  .ContenedorCuenta .Crear {
+    width: 35%;
+    padding: 0.8rem;
+    margin-left: 0;
+  }
+  .ContenedorCuenta .LabelGeneral {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ContenedorCuenta .LabelGeneral .inputPw {
+    width: 100%;
+    padding: 10px;
+  }
+  .ContenedorCuenta .LabelGeneral .inputGeneral {
+    width: 100%;
+    padding: 10px;
+  }
+  .ContenedorCuenta .CentradoBtn .CrearCuenta {
+    width: 35%;
+    margin-left: 0;
+    padding: 15px;
+  }
+  .FormContacto {
+    width: 50%;
+    margin: auto;
+    padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .FormContacto .LabelContacto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin-right: 35px;
+  }
+  .FormContacto .EnviarBtn {
+    margin-left: 0;
+    margin-right: 25px;
+  }
+  .ContenedorNosotros .NosotrosImg {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .HeaderInicio,
+  .headerGaleria,
+  .HeaderNosotros,
+  .HeaderCrearCuenta,
+  .HeaderCuenta,
+  .HeaderContacto {
+    height: 57vw;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  figure {
+    margin-top: 90px;
+    -webkit-transform: translateY(-1200%);
+            transform: translateY(-1200%);
+  }
+  figure figcaption {
+    font-size: 2.5rem;
+  }
+  figure .Auguste {
+    font-size: 1.7rem;
+    margin-right: 30px;
+  }
+  .container {
+    display: none;
+  }
+  .ContainerWeb {
+    z-index: 999;
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.055);
+  }
+  .ContainerWeb .NavWeb {
+    background-color: rgba(0, 0, 0, 0.062);
+  }
+  .ContainerWeb .NavWeb ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .ContainerWeb .NavWeb ul a img {
+    margin-right: 2rem;
+  }
+  .ContainerWeb .NavWeb ul li {
+    display: inline-block;
+    margin-top: 30px;
+  }
+  .ContainerWeb .NavWeb ul li a {
+    text-decoration: none;
+    color: #fcffffc0;
+    text-shadow: 2px 2px 2px black;
+  }
+  .ContainerWeb .NavWeb ul li a:hover {
+    border-bottom: 1px solid rgba(252, 255, 255, 0.753);
+  }
+  .ContenedorImagenes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .ContenedorImagenes .contentImg img {
+    width: auto;
+    height: 300px;
+  }
+  .ContenedorImagenes .contentImg2 img {
+    width: auto;
+    height: 300px;
+  }
+  .ContenedorGaleriaMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .ContenedorGaleriaMobile .contentImg img {
+    width: auto;
+    height: 300px;
+  }
+  .ContenedorGaleriaMobile .contentImg2 img {
+    width: auto;
+    height: 300px;
+  }
+  .Horarios .ImgUno {
+    width: 16%;
+    margin-top: -90px;
+  }
+  .Horarios .ContenedorHorarios {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .Horarios .ContenedorHorarios .ContenedorHora {
+    margin: 2rem;
+  }
+  .Horarios .ContenedorHorarios .ContenedorHora .ImgDos {
+    width: 20%;
+    margin-right: 35rem;
+    margin-top: -48px;
+  }
+  .Horarios .ContenedorHorarios .ContenedorHora .ImgTres {
+    width: 16%;
+    margin-top: 103px;
+    margin-left: 40rem;
+  }
+  .NewsLetter {
+    height: 200px;
+  }
+  .NewsLetter .ContenedorNews h4 {
+    font-size: 32px;
+  }
+  .NewsLetter .ContenedorNews #email {
+    padding: 8px;
+  }
+  .FooterMobile {
+    display: none;
+  }
+  .FooterWeb {
+    display: block;
+    margin-top: 4rem;
+    background-color: black;
+    padding: 2rem;
+  }
+  .FooterWeb .NavFooter {
+    border-bottom: 1px solid white;
+  }
+  .FooterWeb .NavFooter ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .FooterWeb .NavFooter ul li {
+    display: inline-block;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .FooterWeb .NavFooter ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  .FooterWeb .NavFooter ul li a:hover {
+    border-bottom: 1px solid white;
+  }
+  .FooterWeb .InfoWeb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-top: 1rem;
+  }
+  .FooterWeb .InfoWeb p {
+    color: white;
+  }
+  .FooterWeb .IconRedesWeb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .FooterWeb .IconRedesWeb i {
+    color: white;
+    font-size: 1.5em;
+    margin: 10px;
+  }
+  .FooterWeb .CreadorWeb {
+    text-align: center;
+    color: white;
+  }
+  .FooterWeb .CreadorWeb a {
+    color: tomato;
+    text-decoration: none;
+  }
+  .FormContacto {
+    border: none;
+  }
+  .ContenedorCuenta {
+    border: none;
+  }
+  .ContenedorCuenta .LabelGeneral .inputGeneral {
+    width: 250px;
+  }
+  .ContenedorCuenta .LabelGeneral .inputPw {
+    width: 250px;
+  }
+  .ContenedorCuenta .Recuperar {
+    right: 60px;
+  }
+  .ContenedorGaleriaMobile {
+    display: none;
+  }
+  .ContentGaleriaWeb {
+    display: -ms-grid;
+    display: grid;
+    text-align: center;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
+  .ContentGaleriaWeb .contentGaleriaWebImg {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 10px;
+  }
+  .ContentGaleriaWeb .contentGaleriaWebImg img {
+    width: 60%;
+    border-radius: 0 20px 0 20px;
+  }
+  .ContenedorNosotros {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .ContenedorNosotros .NosotrosImg {
+    width: 40%;
+  }
+  .ContenedorNosotros .textoNosotros {
+    padding: 9rem;
+  }
+  .TitleNosotros {
+    font-size: 32px;
+  }
+  .ContenedorObra {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2rem;
+  }
+  .ContenedorObra img {
+    width: 40%;
+    border-radius: 0;
+  }
+  .ContenedorObra .ContentObra h2 {
+    font-size: 1.3rem;
+    padding: 5px;
+  }
+  .ContenedorObra .ContentObra p {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 1280px) {
+  figure {
+    margin-top: 10rem;
+  }
+  .Horarios .ImgUno {
+    width: 13%;
+  }
+  .Horarios .ContenedorHorarios .ContenedorHora .ImgDos {
+    width: 20%;
+    margin-right: 45rem;
+  }
+  .Horarios .ContenedorHorarios .ContenedorHora .ImgTres {
+    width: 13%;
+    margin-top: 3.7rem;
+    margin-left: 50rem;
+  }
+  .ContenedorNosotros .NosotrosImg {
+    width: 40%;
+  }
+  .ContenedorNosotros .textoNosotros {
+    padding: 5rem;
+  }
+}
+
+@media (min-width: 1360px) {
+  h1 {
+    margin-top: 20px;
+  }
+  figure {
+    margin-top: 9rem;
+  }
+  figure figcaption {
+    font-size: 3rem;
+  }
+  figure .Auguste {
+    font-size: 2rem;
+  }
+  .Galeria h2 {
+    font-size: 32px;
+  }
+  .Horarios h3 {
+    font-size: 32px;
+  }
+  .Horarios p {
+    font-size: 26px;
+  }
+  .Horarios .ImgUno {
+    width: 14%;
+  }
+  .Horarios .ContenedorHorarios .ContenedorHora .ImgDos {
+    margin-right: 48rem;
+  }
+  .Horarios .ContenedorHorarios .ContenedorHora .ImgTres {
+    margin-top: 2rem;
+    margin-left: 52rem;
+  }
+  .ContenedorNosotros .NosotrosImg {
+    width: 39%;
+  }
+  .ContenedorNosotros .textoNosotros {
+    padding: 5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  h1 {
+    margin-top: 20px;
+  }
+  figure {
+    margin-top: 14rem;
+  }
+  figure figcaption {
+    font-size: 3.2rem;
+    margin-left: 5rem;
+  }
+  figure .Auguste {
+    margin-right: 2.5rem;
+  }
+  .ContainerWeb .NavWeb ul li {
+    font-size: 26px;
+  }
+  .Horarios h3 {
+    font-size: 32px;
+  }
+  .Horarios p {
+    font-size: 22px;
+  }
+  .Horarios .ImgUno {
+    width: 12%;
+    margin-top: -100px;
+  }
+  .Horarios .ContenedorHorarios .ContenedorHora .ImgDos {
+    width: 15%;
+    margin-right: 53rem;
+    margin-top: -48px;
+  }
+  .Horarios .ContenedorHorarios .ContenedorHora .ImgTres {
+    margin-left: 56rem;
+    margin-top: -19px;
+    width: 15%;
+  }
+  .NewsLetter .ContenedorNews h4 {
+    font-size: 36px;
+  }
+  .NewsLetter .ContenedorNews #email {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 1920px) {
+  h1 {
+    font-size: 5rem;
+  }
+  figure {
+    margin-top: 25rem;
+  }
+  figure figcaption {
+    font-size: 3.5rem;
+  }
+  figure .Auguste {
+    font-size: 2.5rem;
+  }
+  .Galeria h2 {
+    font-size: 32px;
+  }
+  .Horarios p {
+    font-size: 26px;
+  }
+  .Horarios .ImgUno {
+    width: 9%;
+  }
+  .Horarios .ContenedorHorarios .ContenedorHora .ImgDos {
+    margin-right: 70rem;
+  }
+  .Horarios .ContenedorHorarios .ContenedorHora .ImgTres {
+    margin-left: 76rem;
+    width: 11%;
+    margin-top: -10px;
+  }
+  .ContenedorNosotros .textoNosotros {
+    font-size: 22px;
+    padding: 5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
